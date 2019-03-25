@@ -4,9 +4,9 @@
   <!-- Assemble point clouds without IMU and odometry. -->
   <arg name="naive_assembling" default="false"/>
   <!-- The ID of the fixed world frame. -->
-  <arg name="fixed_frame_id" default="odom" />
+  <arg name="fixed_frame_id" default="G_ground_frame" />
   <!-- The ID of the frame attached to the robot base. -->
-  <arg name="vehicle_base_frame_id" default="base_link"/>
+  <arg name="vehicle_base_frame_id" default="I_IMU_frame"/>
   <!-- The ID of the sensor (the point clouds are assumed to be in this frame. -->
   <arg name="velodyne_frame_id" default="velodyne"/>
   <!-- Topic to listen to for velodyne packets. -->
