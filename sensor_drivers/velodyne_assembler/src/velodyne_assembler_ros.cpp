@@ -78,7 +78,7 @@ void VelodyneAssemblerRos::pclCallback(
     } else {
       try {
         tf_listener_.waitForTransform(fixed_frame_id_, vehicle_base_frame_id_,
-                                      stamp_in, ros::Duration(0.1));
+                                      stamp_in, ros::Duration(0.2));
 
         tf_listener_.lookupTransform(fixed_frame_id_, vehicle_base_frame_id_,
                                      stamp_in, T_fixed_base_tf);
